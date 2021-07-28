@@ -1,8 +1,4 @@
-menu = ["Wings", "Cookies", "Spring Rolls", "Salmon", "Steak", "Meat Tornado", "A Literal Garden", "Ice Cream", "Cake", "Pie", "Coffee", "Tea", "Unicorn Tears"]
-
-
-
-print(
+snake_cafe_menu=(
     """
     **************************************
 **    Welcome to the Snakes Cafe!   **
@@ -42,6 +38,24 @@ Unicorn Tears
     """
 )  
 
+print(snake_cafe_menu) 
+
+The_menu = [
+    "Wings", 
+"Cookies", 
+"Spring Rolls", 
+"Salmon", 
+"Steak", 
+"Meat Tornado", 
+"A Literal Garden", 
+"Ice Cream", 
+"Cake", 
+"Pie", 
+"Coffee",
+ "Tea", 
+ "Unicorn Tears"
+ ]
+
 order = []
 
 def menuist():
@@ -49,7 +63,7 @@ def menuist():
     orders = input('>')
     
     while orders != 'quit':
-        if orders in menu:
+        if orders in The_menu:
             order.append(orders)
             print(f'** {order.count(orders)} order of {orders} have been added to your meal **')
         else:
